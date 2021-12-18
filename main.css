@@ -1,0 +1,110 @@
+:root{
+	--fontYear: 'Share Tech Mono', monospace;
+	--fontClock: 'Roboto Mono', monospace;
+	--colorClaro: white;
+}
+
+body{
+	background-color: #232323;
+	font-family: var(--fontClock);
+	text-align: center;
+
+}
+
+
+
+/* Resto del reloj */
+.centerText{
+	display: inline-flex;
+	width: 100%;
+}
+
+.lineaGuia{
+	border-bottom: 1px solid var(--colorClaro);
+	display: flex;
+	width: 100px;
+}
+
+
+.alineacion{
+	height: 85vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 10vh;
+}
+.alineacion2{
+	width: 100%;
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+
+.digitYear{
+	font-family: var(--fontYear);
+	color: var(--colorClaro);
+	font-size: 60px;
+	line-height: 100px;
+	letter-spacing: 10px;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.reloj{
+	margin-top: 10px;
+	border: 3px solid #232323;
+  	box-shadow:	-5px -5px 10px rgba(100, 100, 100, 0.5),
+  				5px 5px 10px rgba(0, 0, 0, 0.7) inset,
+  				-5px -5px 10px rgba(100, 100, 100, 0.5) inset,
+  				5px 5px 10px rgba(0, 0, 0, 0.7);
+  	text-align: center;
+  	width: 70%;
+  	height: 150px;
+  	margin-left: auto;
+  	margin-right: auto;
+
+  	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.digitos{
+	margin-top: -10px;
+	color: var(--colorClaro);
+}
+
+.digit{
+	display: inline;
+	font-size: 90px;
+	margin-top: -10px;
+}
+.separador{
+	color:gray;
+	display:inline;
+	font-size: 90px;
+	margin-top: -10px;
+}
+
+
+
+@media all and (max-width:650px){
+
+	.digitYear{
+		font-size: 40px;
+		line-height: 70px;
+	}
+
+	.reloj{
+		
+		width: 90%;
+	}
+
+	.digit{
+		font-size:60px;
+	}
+
+	.separador{
+		font-size: 60px;
+	}
+	
+}
