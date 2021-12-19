@@ -35,14 +35,14 @@
 	transform: rotate(90deg);
 }
 
-a[href="#info"]{
+.informacion{
 	text-decoration: none;
 	color:var(--colorGeneral2);
 	padding-right: 6px;
 	margin-right: -6px;
 }
 
-a[href="#info"]:hover{
+.informacion:hover{
 	text-decoration: none;
 	color:black;
 	background-color: var(--colorGeneral2);
