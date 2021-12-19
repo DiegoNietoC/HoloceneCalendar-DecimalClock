@@ -2,16 +2,16 @@
 	--fontYear: 'Share Tech Mono', monospace;
 	--fontClock: 'Roboto Mono', monospace;
 	--colorClaro: white;
+	--colorGeneral: #00ffff;
 }
-
+html{
+	scroll-behavior: smooth;
+}
 body{
 	background-color: #232323;
 	font-family: var(--fontClock);
 	text-align: center;
-
 }
-
-
 
 /* Resto del reloj */
 .centerText{
@@ -79,13 +79,61 @@ body{
 	margin-top: -10px;
 }
 .separador{
-	color:gray;
+	color:var(--colorGeneral);
 	display:inline;
 	font-size: 90px;
 	margin-top: -10px;
 }
 
+article{
+	padding-top: 10px;
+	height: 100vh;
+	width: 77vw;
+	margin: 0 auto;
+	text-align: justify;
+	color: var(--colorClaro);
+	display: block;
+}
 
+.wikiLink{
+	color: var(--colorGeneral);
+	text-decoration: none;
+}
+.wikiLink:hover{
+	color: black;
+	text-decoration: none;
+	background-color: var(--colorGeneral);
+}
+
+.video{
+	text-align: center;
+	margin-bottom: 30px;
+}
+iframe{
+	margin:0 auto;
+	width: 56vw;
+	height: 31.5vw;
+	border-radius: 10px;
+}
+
+footer{
+	margin-top: 130px;
+	display: block;
+	color: gray;
+}
+
+.atribucion{
+	color: gray;
+	text-decoration: none;
+	font-family: var(--textoSecundario);
+	text-align: center;
+	margin: 0 auto;
+	display: inline;
+}
+.atribucion a{
+	color: var(--colorTextoClaro);
+	text-decoration: none;
+}
 
 @media all and (max-width:650px){
 
@@ -95,8 +143,7 @@ body{
 	}
 
 	.reloj{
-		
-		width: 90%;
+		width: 85%;
 	}
 
 	.digit{

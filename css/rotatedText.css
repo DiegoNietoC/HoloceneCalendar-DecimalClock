@@ -1,0 +1,45 @@
+.Pantalla1{
+	position: fixed;
+	width: 100vw;
+	height:1vh;
+	margin-left: -8px;
+	display: flex;
+	z-index: 0;
+	color: var(--colorGeneral);
+}
+
+.centradoHorizontal{
+	margin: 0 auto;
+	width: 96vw;
+	height: 10%;
+	margin-top: 38vh;
+}
+
+.leftText{
+	float: left;
+	width: 25px;
+	height: 100%;
+}
+.rightText{
+	float: right;
+	width: 25px;
+	height: 100%;
+}
+
+.rotacion{
+	white-space: nowrap; /*Esto evita el salto de línea*/	
+	transform: rotate(90deg);
+}
+
+a[href="#info"]{
+	text-decoration: none;
+	color:var(--colorGeneral);
+	padding-right: 6px;
+	margin-right: -6px;
+}
+
+a[href="#info"]:hover{
+	text-decoration: none;
+	color:black;
+	background-color: var(--colorGeneral);
+}

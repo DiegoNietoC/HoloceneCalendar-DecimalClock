@@ -1,36 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Reloj</title>
-	<link href="main.css" rel="stylesheet" type="text/css">
+	<title>Holocene Calendar & Decimal Clock</title>
+	<link rel="icon" href="./favicon.png">
+	<link href="./css/main.css" rel="stylesheet" type="text/css">
+	<link href="./css/rotatedText.css" rel="stylesheet" type="text/css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto+Mono:ital,wght@0,300;1,300&family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
-
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto+Mono:ital,wght@0,300;1,300&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="z-index: 0;">
 <script src="app.js"></script>
 
 
-		<div class="centerText">
-			<container class="alineacion">
-				<container class="alineacion2">
 
-					<div id="añosDec" class="digitYear"></div>
+	<header class="Pantalla1" style="z-index: 1;">
+		<nav class="centradoHorizontal">
 
-					<div class="reloj">
-						<div class="digitos">
-							<div id="horasDec" class="digit"></div>
-							<div class="separador">:</div>
-							<div id="minutosDec" class="digit"></div>
-							<div class="separador">:</div>
-							<div id="segundosDec" class="digit"></div>
-						</div>
+			<div class="leftText">
+				<div class="rotacion">
+					<a href="#info">// Decimal Clock ■</a>—————————————————————————————————
+				</div>
+			</div>
+
+			<div class="centro"></div>
+
+			<div class="rightText">
+				<div class="rotacion">
+					<a href="#info">// Holocene Calendar ■</a>—————————————————————————————————
+				</div>
+			</div>
+
+		</nav>
+	</header>
+
+
+
+	<div class="centerText">
+		<container class="alineacion">
+			<container class="alineacion2">
+
+				<div id="añosDec" class="digitYear"></div>
+
+				<div class="reloj">
+					<div class="digitos">
+						<div id="horasDec" class="digit"></div>
+						<div class="separador">:</div>
+						<div id="minutosDec" class="digit"></div>
+						<div class="separador">:</div>
+						<div id="segundosDec" class="digit"></div>
 					</div>
+				</div>
 
-				</container>
 			</container>
+		</container>
+	</div>
+
+	<article style="z-index: 2;"><a name="info"></a>
+		<h1>MEET THE NEW HOLOCENE CALENDAR AND DECIMAL CLOCK</h1>
+		This website is based an idea about a different perspective of the time. This uses the concept of an Holocene Calendar (proposed by the Italian geologist Cesare Emiliani (1922-1995) according to Wikipedia),
+		and the Decimal Time (in which the day is divided in 10 hours whith 100 minutes and 100 seconds).
+		
+		<br><br>
+
+		<h2>MORE ABOUT HOLOCENE CALENDAR AND DECIMAL CLOCK</h2>
+		You can visit the article on Wikipedia about decimal time by <a class="wikiLink" href="https://en.wikipedia.org/wiki/Decimal_time">clicking here</a>.
+		<p>Also, you can learning about holocene calendar watching this video by Kurzgesagt:</p>
+		
+		<br>
+
+		<div class="video">
+			<iframe src="https://www.youtube.com/embed/czgOWmtGVGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
+	</article>
+
+	<footer>
+		<a class="atribucion" href="https://iconscout.com/icons/clock" target="_blank">Clock Icon</a> by <a class="atribucion" href="https://iconscout.com/contributors/chamedesign" target="_blank">Chamestudio</a>
+	</footer>
 
 
 </body>
