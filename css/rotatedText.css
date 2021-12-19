@@ -47,3 +47,11 @@
 	color:black;
 	background-color: var(--colorGeneral2);
 }
+
+@media all and (max-width:650px){
+
+	.Pantalla1{
+		font-size:14px;
+	}
+
+}

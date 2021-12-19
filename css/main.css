@@ -138,20 +138,30 @@ footer{
 @media all and (max-width:650px){
 
 	.digitYear{
-		font-size: 40px;
+		font-size: 35px;
 		line-height: 70px;
 	}
 
 	.reloj{
-		width: 85%;
+		width: 80%;
+		height: 100px;
 	}
 
 	.digit{
-		font-size:60px;
+		font-size:46px;
 	}
 
 	.separador{
-		font-size: 60px;
+		font-size: 46px;
+	}
+
+	iframe{
+		width: 70vw;
+		height: 39vw;
+	}
+
+	footer{
+		font-size:14px;
 	}
 	
 }
