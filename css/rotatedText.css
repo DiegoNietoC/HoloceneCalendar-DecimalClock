@@ -1,3 +1,7 @@
+:root{
+	--colorGeneral2: #00ffff;
+}
+
 .Pantalla1{
 	position: fixed;
 	width: 100vw;
@@ -5,7 +9,7 @@
 	margin-left: -8px;
 	display: flex;
 	z-index: 0;
-	color: var(--colorGeneral);
+	color: var(--colorGeneral2);
 }
 
 .centradoHorizontal{
@@ -33,7 +37,7 @@
 
 a[href="#info"]{
 	text-decoration: none;
-	color:var(--colorGeneral);
+	color:var(--colorGeneral2);
 	padding-right: 6px;
 	margin-right: -6px;
 }
@@ -41,5 +45,5 @@ a[href="#info"]{
 a[href="#info"]:hover{
 	text-decoration: none;
 	color:black;
-	background-color: var(--colorGeneral);
+	background-color: var(--colorGeneral2);
 }
